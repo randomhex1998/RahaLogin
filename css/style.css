@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+    _font-vazir: "Vazirmatn", sans-serif;
+}
+
 * {
     transition: all 0.4s;
+    font-family: _font-vazir;
 }
 
 .rightCol {
@@ -13,6 +19,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.wrapper {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 @media screen and (max-width: 1200px) {
