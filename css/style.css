@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+    font-family: "Digi Almas Bold";
+    src: url("../fonts/almas.ttf");
+}
 :root {
     --font-vazir: "Vazirmatn", sans-serif;
+    --font-almas: "Digi Almas Bold";
 }
 
 * {
@@ -26,14 +31,18 @@ body {
 }
 
 .wrapper {
-    width: 60%;
-    padding: 1rem;
+    width: 50%;
+    padding: 3rem;
     height: 60vh;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.65);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.title {
+    font-family: var(--font-almas);
 }
 
 @media screen and (max-width: 1200px) {
