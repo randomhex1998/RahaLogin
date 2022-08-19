@@ -1,0 +1,27 @@
+* {
+    transition: all 0.4s;
+}
+
+.rightCol {
+    background-image: url("../img/pexels-lisa-fotios-2106037.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 120px 0 0 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .rightCol {
+        border-radius: 0;
+        order: 1;
+        height: 50vh;
+    }
+    .leftCol {
+        order: 2;
+    }
+}
