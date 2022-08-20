@@ -23,7 +23,7 @@ body {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 120px 0 0 120px;
     display: flex;
     justify-content: center;
@@ -49,5 +49,10 @@ body {
     .rightCol {
         border-radius: 0;
         height: 50vh;
+    }
+    .wrapper{
+        width: 85%;
+        height: auto;
+        padding: 1rem;
     }
 }
