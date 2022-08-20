@@ -32,8 +32,8 @@ body {
 
 .wrapper {
     width: 50%;
-    padding: 3rem;
-    height: 60vh;
+    padding: 2.5rem;
+    height: auto;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.65);
     display: flex;
@@ -44,13 +44,16 @@ body {
 .title {
     font-family: var(--font-almas);
 }
+.regLink:hover {
+    color: gold;
+}
 
 @media screen and (max-width: 1200px) {
     .rightCol {
         border-radius: 0;
         height: 50vh;
     }
-    .wrapper{
+    .wrapper {
         width: 85%;
         height: auto;
         padding: 1rem;
