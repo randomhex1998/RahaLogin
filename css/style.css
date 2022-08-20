@@ -23,11 +23,17 @@ body {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    /* overflow: hidden; */
     border-radius: 120px 0 0 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.leftCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
 }
 
 .wrapper {
@@ -46,6 +52,11 @@ body {
 }
 .regLink:hover {
     color: gold;
+}
+
+.btnForm {
+    background-color: #0abde3;
+    color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
