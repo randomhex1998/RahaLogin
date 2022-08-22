@@ -9,12 +9,12 @@
 }
 
 * {
-    transition: all 0.4s;
     font-family: var(--font-vazir);
 }
 
 body {
     overflow-x: hidden;
+    background-color: #f5f6fa;
 }
 
 .rightCol {
@@ -51,12 +51,16 @@ body {
     font-family: var(--font-almas);
 }
 .regLink:hover {
-    color: gold;
+    color: #3498db;
 }
 
-.btnForm {
-    background-color: #0abde3;
-    color: #fff;
+.btnSendForm {
+    width: 100%;
+    background-color: #f1c40f;
+    transition: all 0.2s linear;
+}
+.btnSendForm:hover {
+    background-color: #f39c12;
 }
 
 @media screen and (max-width: 1200px) {
