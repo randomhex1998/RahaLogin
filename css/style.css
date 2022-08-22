@@ -6,6 +6,8 @@
 :root {
     --font-vazir: "Vazirmatn", sans-serif;
     --font-almas: "Digi Almas Bold";
+    --primary-green-ocean: #1abc9c;
+    --primary-green-bold-ocean: #16a085;
 }
 
 * {
@@ -18,7 +20,7 @@ body {
 }
 
 .rightCol {
-    background-image: url("../img/pexels-lisa-fotios-2106037.jpg");
+    background-image: url("../img/pexels-taryn-elliott-5858975.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -50,17 +52,31 @@ body {
 .title {
     font-family: var(--font-almas);
 }
-.regLink:hover {
-    color: #3498db;
+
+.regLink,
+.forgot-link {
+    color: var(--primary-green-ocean);
+    transition: all 0.2s linear;
+}
+.regLink:hover,
+.forgot-link:hover {
+    color: var(--primary-green-bold-ocean);
 }
 
 .btnSendForm {
     width: 100%;
-    background-color: #f1c40f;
+    background-color: var(--primary-green-ocean);
+    color: #fff;
     transition: all 0.2s linear;
 }
 .btnSendForm:hover {
-    background-color: #f39c12;
+    background-color: var(--primary-green-bold-ocean);
+    color: #fff;
+}
+
+.inputs {
+    transition: all 0.2s linear;
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 1200px) {
