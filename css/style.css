@@ -75,6 +75,7 @@ body {
 }
 
 .inputs {
+    height: 3rem;
     transition: all 0.2s linear;
     opacity: 0.5;
 }
@@ -89,4 +90,15 @@ body {
         height: auto;
         padding: 1rem;
     }
+}
+
+.fccolor {
+    background-color: #4267b2;
+}
+.fccolor:hover{
+    background-color: #395b9e;
+}
+
+.social-btn {
+    transition: all 0.3s linear;
 }
