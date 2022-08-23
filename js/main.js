@@ -6,7 +6,7 @@ mode.addEventListener("click", function () {
         modeIco.classList.remove("fa-sun");
         modeIco.classList.toggle("fa-moon");
         modeIco.style.color = "#fff";
-        document.body.classList.toggle("whitetexts");
+        document.body.classList.add("whitetexts");
         localStorage.setItem("theme", "dark");
     } else {
         modeIco.classList.add("fa-sun");
@@ -23,6 +23,6 @@ window.onload = function () {
         modeIco.classList.remove("fa-sun");
         modeIco.classList.toggle("fa-moon");
         modeIco.style.color = "#fff";
-        document.body.classList.toggle("whitetexts");
+        document.body.classList.add("whitetexts");
     }
 };
