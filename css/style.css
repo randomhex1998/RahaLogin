@@ -17,6 +17,12 @@
 body {
     overflow-x: hidden;
     background-color: #f5f6fa;
+    transition: all 0.4s linear;
+}
+
+.whitetexts {
+    color: white;
+    background-color: rgb(43, 43, 43);
 }
 
 .rightCol {
@@ -32,10 +38,18 @@ body {
 }
 
 .leftCol {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
+}
+.mode-area {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -95,10 +109,14 @@ body {
 .fccolor {
     background-color: #4267b2;
 }
-.fccolor:hover{
+.fccolor:hover {
     background-color: #395b9e;
 }
 
 .social-btn {
     transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
 }
