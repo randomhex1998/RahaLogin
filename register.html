@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
+        <title>Register</title>
         <link rel="stylesheet" href="./css/bootstrap.rtl.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1yTLwNiCZhIdCWolQldwq4spHQkgZDqkG"/>
@@ -12,6 +12,9 @@
         <script src="./js/main.js" defer></script>
     </head>
     <body lang="ar" dir="rtl">
+        <div class="pre-loader">
+            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_splvlq6w.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay></lottie-player>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="rightCol col">
@@ -26,8 +29,8 @@
                             </p>
                         </div>
                         <div class="">
-                            <p>عضو نیستید ؟</p>
-                            <a href="#" class="regLink">ثبت نام کنید</a>
+                            <p>عضو هستید ؟</p>
+                            <a href="./index.html" class="regLink">وارد شوید</a>
                         </div>
                     </div>
                 </div>
@@ -36,9 +39,13 @@
                         <i class="fa-solid fa-sun"></i>
                     </div>
                     <div class="w-xl-50">
-                        <h1>ورود</h1>
-                        <p class="py-4">وارد شوید تا خدمات شگفت انگیز ما را امتحان کنید</p>
+                        <h1>ثبت نام</h1>
+                        <p class="py-4">ثبت نام کنید تا خدمات شگفت انگیز ما را امتحان کنید</p>
                         <form>
+                            <div class="mb-4">
+                                <label class="h6 mb-3 form-label">نام و نام خانودگی</label>
+                                <input type="text" class="form-control inputs" placeholder="نام خود را وارد کنید" />
+                            </div>
                             <div class="mb-4">
                                 <label class="h6 mb-3 form-label">ایمیل</label>
                                 <input type="text" class="form-control inputs" placeholder="ایمیل خود را وارد کنید" />
@@ -47,8 +54,9 @@
                                 <label class="h6 mb-3 form-label">رمز عبور</label>
                                 <input type="password" class="form-control inputs" placeholder="رمز عبور خود را وارد کنید"/>
                             </div>
-                            <div class="my-4">
-                                <a href="#" class="nav-link forgot-link">فراموشی رمز عبور</a>
+                            <div class="my-5 form-check">
+                                <label class="form-check-label">من با شرایط خدمات موافقم. شرایط پرداخت و سیاست حفظ حریم خصوصی</label>
+                                <input type="checkbox" class="form-check-input" name="" id="">
                             </div>
                             <button type="submit" class="btn btnSendForm mb-5">
                                 ارسال
