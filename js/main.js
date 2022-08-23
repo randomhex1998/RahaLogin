@@ -1,5 +1,6 @@
 let mode = document.querySelector(".mode-area");
 let modeIco = document.querySelector(".mode-area i");
+let preLoader = document.querySelector(".pre-loader");
 
 mode.addEventListener("click", function () {
     if (modeIco.className.includes("fa-sun")) {
@@ -25,4 +26,5 @@ window.onload = function () {
         modeIco.style.color = "#fff";
         document.body.classList.add("whitetexts");
     }
+    preLoader.style.display = "none";
 };

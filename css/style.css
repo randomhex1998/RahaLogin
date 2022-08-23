@@ -18,6 +18,20 @@ body {
     overflow-x: hidden;
     background-color: #f5f6fa;
     transition: all 0.4s linear;
+    position: relative;
+}
+
+.pre-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f5f6fa;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .whitetexts {
