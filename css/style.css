@@ -58,9 +58,11 @@ body {
     height: auto;
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.65);
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: right;
 }
 
 .leftCol {

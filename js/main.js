@@ -1,36 +1,33 @@
 let mode = document.querySelector(".mode-area");
 let modeIco = document.querySelector(".mode-area i");
-let preLoader = document.querySelector(".pre-loader");
 
 mode.addEventListener("click", function () {
+    // START ADD AND REMOVE DARK MODE BTN ANIMATION
     mode.classList.add("anime");
-
     mode.addEventListener("animationend", function () {
         mode.classList.remove("anime");
     });
 
+    // CHECK STATUS BTN FOR LIGHT OR DARK THEME
     if (modeIco.className.includes("fa-sun")) {
-        modeIco.classList.remove("fa-sun");
-        modeIco.classList.toggle("fa-moon");
+        modeIco.classList = "fa fa-moon";
         modeIco.style.color = "#fff";
         document.body.classList.add("dark-mode");
         localStorage.setItem("theme", "dark");
     } else {
-        modeIco.classList.add("fa-sun");
-        modeIco.classList.remove("fa-moon");
+        modeIco.classList = "fa fa-sun";
         document.body.classList.remove("dark-mode");
         modeIco.style.color = "#444";
         localStorage.setItem("theme", "light");
     }
 });
 
+// GET AND CHECK STATUS FOR SAVE IN LOCALSTORAGE FOR SAVE MODE
 window.onload = function () {
-    let bb = localStorage.getItem("theme");
-    if (bb == "dark") {
-        modeIco.classList.remove("fa-sun");
-        modeIco.classList.toggle("fa-moon");
+    let getDarkModeStatus = localStorage.getItem("theme");
+    if (getDarkModeStatus == "dark") {
+        modeIco.classList = "fa fa-moon";
         modeIco.style.color = "#fff";
         document.body.classList.add("dark-mode");
     }
-    preLoader.style.display = "none";
 };
