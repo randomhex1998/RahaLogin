@@ -1,8 +1,13 @@
+/* Start Font */
 @import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @font-face {
     font-family: "Digi Almas Bold";
     src: url("../fonts/almas.ttf");
 }
+
+/* End Font */
+
 :root {
     --font-vazir: "Vazirmatn", sans-serif;
     --font-almas: "Digi Almas Bold";
@@ -21,25 +26,21 @@ body {
     position: relative;
 }
 
-.pre-loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #f5f6fa;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Almas font variable */
+.title {
+    font-family: var(--font-almas);
 }
 
-.whitetexts {
+/*add dark mode to all page*/
+.dark-mode {
     color: white;
     background-color: rgb(43, 43, 43);
 }
 
+/* *************************** Start Main Styles *************************** */
+
 .rightCol {
+    /*Wrapper and its container you can change flower pick from here*/
     background-image: url("../img/pexels-lisa-fotios-2106037.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -49,21 +50,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.leftCol {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
-}
-.mode-area {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    font-size: 30px;
-    cursor: pointer;
 }
 
 .wrapper {
@@ -77,8 +63,12 @@ body {
     justify-content: space-between;
 }
 
-.title {
-    font-family: var(--font-almas);
+.leftCol {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
 }
 
 .regLink,
@@ -108,18 +98,7 @@ body {
     opacity: 0.5;
 }
 
-@media screen and (max-width: 992px) {
-    .rightCol {
-        border-radius: 0;
-        height: 50vh;
-    }
-    .wrapper {
-        width: 85%;
-        height: auto;
-        padding: 1rem;
-    }
-}
-
+/*Facebook social color and its hover color*/
 .fccolor {
     background-color: #4267b2;
 }
@@ -133,4 +112,49 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0.8rem;
+}
+
+@media screen and (max-width: 992px) {
+    .rightCol {
+        border-radius: 0;
+        height: 50vh;
+    }
+    .wrapper {
+        width: 85%;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+/*dark mode position btn and its animation*/
+
+.mode-area {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mode-area.anime {
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
